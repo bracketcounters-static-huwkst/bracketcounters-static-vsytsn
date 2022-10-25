@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown - CodeWithPritam</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .dropdown {
+            background-color: #eee;
+            display: block;
+            padding: 10px;
+            margin-top: 100px;
+            cursor: pointer;
+        }
+
+        .dropdown-items {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #eee;
+            overflow: hidden;
+            height: 0;
+            transition: 0.2s;
+        }
+
+        .dropdown:hover .dropdown-items {
+            height: 200px;
+        }
+
+        .dropdown-items li {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: blueviolet;
+            text-decoration: underline;
+        }
+    </style>
+
+    <div class="container">
+        <div class="dropdown">Dropdown
+            <ul class="dropdown-items">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Products</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
